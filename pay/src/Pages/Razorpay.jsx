@@ -95,11 +95,11 @@ function Razorpay() {
                 apiUrl = `http://3.27.116.137:3000/updateparentplan?sub_id=${sub_id}`;
                 emailUrl = `http://3.27.116.137:3000/parentemail?sub_id=${sub_id}`;
               } else if (sub_id.startsWith("SPT")) {
-                apiUrl = `http://3.27.116.137:3000/updatestudentplan?sub_id=${sub_id}`;
-                emailUrl = `http://3.27.116.137:3000/studentemail?sub_id=${sub_id}`;
-              } else if (sub_id.startsWith("SPS")) {
                 apiUrl = `http://3.27.116.137:3000/updatetutorplan?sub_id=${sub_id}`;
                 emailUrl = `http://3.27.116.137:3000/tutoremail?sub_id=${sub_id}`;
+              } else if (sub_id.startsWith("SPS")) {
+                apiUrl = `http://3.27.116.137:3000/updatestudentplan?sub_id=${sub_id}`;
+                emailUrl = `http://3.27.116.137:3000/studentemail?sub_id=${sub_id}`;
               } else {
                 console.log("Invalid subscription ID format:", sub_id);
                 return;
